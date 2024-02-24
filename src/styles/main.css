@@ -1,63 +1,81 @@
+/*Conteúdo da Página*/
 body{
-    font-family: "Titillium Web", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    background: linear-gradient(30deg, #05458f, #0f7);
-    align-items: center;
-    justify-content: center;
+    font-family: "Titillium Web", sans-serif; /*Fonte do Google - Sans Serif*/
+    font-weight: 400; /*Peso da Fonte*/
+    font-style: normal; /*Estilo Normal*/ 
+    background: linear-gradient(30deg, #05458f, #0f7); /*Cor de Fundo  - Gradiente*/
+    align-items: center; /*Centraliza Horizontalmente*/
+    justify-content: center; /*Centraliza Verticalmente*/
 }
 
+/*Conteúdo do Calculo*/
 .container{
-    border: 2px solid #000;
-    background-color: #e6e6e6;
-    border-radius: 16px;
-    padding: 4rem 8rem;
+    border: 2px solid #000; /*Borda Preta de 2 px*/
+    background-color: #e6e6e6; /*Cor de Fundo Branco*/
+    border-radius: 16px; /*Arredonda a Borda*/
+    padding: 4rem 8rem; /*Espaçamento Interno de 4x o tamanho da raiz (Em cima e embaixo) e de 8x o tamanho da raíz (Direita e Esquerda)*/
 }
 
+/*Conteúdo*/
 .container, main section, form{
-    display: flex;
-    flex-direction: column;
+    display: flex; /*Flexbox*/
+    flex-direction: column; /*Alinha em Colunas*/
 }
 
+/*Título*/
 h1{
-    margin: 2rem 0;
+    margin: 2rem 0; /*Margem de 2x o tamanho da raiz do HTML para cima e para baixo e zera a margem da esquerda e direita*/
 }
 
+/*Formulário*/
 form{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 1rem 0;
+    display: flex; /*Flexbox*/
+    flex-direction: column; /*Alinha em Colunas*/
+    align-items: center; /*Alinha Texto ao Centro*/
+    margin: 1rem 0; /*Margem de 1x o tamanho da Raiz do Documento HTML em cima em embaixo e zero a esquerda e a direita*/
 }
 
+/*Campos de Entrada de Dados*/
 input{
-    width: 80%;
-    text-align: center;
-    color: #fafafa;
-    background-color: #080808;
-    margin: 0.5rem 0;
+    width: 80%; /*Largura de 80% em relaçao ao Elemento Pai*/
+    text-align: center; /*Alinha o texto ao Centro*/
+    color: #fafafa; /*Cor Branca*/
+    background-color: #080808; /*Cor de Fundo Preta*/
+    margin: 0.5rem 0; /*Margem de 50% da raiz do documento HTML em cima e embaixo e zero a esquerda e a direita*/
 }
 
-input.btn-1, input.btn-2{
-    border: 2px solid #000;
-    background-color: #0554ca;
-    color: #fafafa;
-    width: 80px;
-    border-radius: 4px;
-    padding: 0.25rem;
+/*Botões*/
+input.btn{
+    border: 2px solid #000; /*Borda de 2px preta*/
+    background-color: #0554ca; /*Cor de Fundo Azul*/
+    color: #fafafa; /*Cor do Texto Branco*/
+    width: 100px; /*Largura de 100px*/
+    border-radius: 4px; /*Arredonda o Botão*/
+    padding: 0.25rem; /*Espaçamento de 25% da Raiz do HTML*/
 }
 
+/*Evento ao passar o mouse no botão*/
+input.btn:hover{
+    cursor: pointer; /*Adiciona a Mãozinha*/
+    transform: scale(1.05); /*Aumenta o Botão em 5%*/
+}
+
+/*Botão de Enviar*/
 input.btn-1{
-    margin: 3rem 0 0.5rem 0;
+    margin: 3rem 0 0.5rem 0; /*Margem de 3x o elemento Raiz do HTML ao topo e 50% embaixo e zera a esquerda e a direita*/
 }
 
-footer{
-    background-color: #e6e6e6;
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    padding: 3rem 0;
-    border: 1px solid #000;
-    position: relative;
-    bottom: -100px;
+/*Divisão de Exibir Resultado*/
+.exibir-resultado{
+    display: flex; /*Flexbox*/
+    align-items: center; /*Alinha Verticalmente ao centro*/
+    margin-top: 3rem; /*Margem de 3x o elemento Raiz do HTML no topo*/
+}
+
+/*Resultado*/
+#result{
+    font-size: 1.2rem; /*Tamanho da Fonte*/
+    margin-left: 1rem; /*Margem de 1x o tamanho do Documento HTML a esquerda*/
+    font-weight: 500; /*Peso da Fonte*/
+    text-shadow: 0.2px 0.2px 0.2px #000; /*Sombra na Fonte*/
 }

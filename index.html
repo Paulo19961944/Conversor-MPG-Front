@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="src/styles/reset.css">
     <link rel="stylesheet" href="src/styles/main.css">
+    <link rel="stylesheet" href="src/styles/media-queries.css">
     <title>Conversor MPG em KM/L</title>
 </head>
 
@@ -18,17 +19,22 @@
         </header>
         <main>
             <section>
-                <form action="src/scripts/script.js">
+                <form>
                     <label for="km">Digite o valor em Km/l: </label>
                     <input type="number" name="kmPorLitro" id="km">
                     <label for="MPG">Digite o valor em MPG: </label>
                     <input type="number" name="valorMPG" id="MPG">
-                    <input type="submit" value="Enviar" class="btn-1">
-                    <input type="reset" value="Limpar" class="btn-2">
+                    <input type="button" value="Enviar" class="btn-1 btn">
+                    <input type="reset" value="Limpar" class="btn-2 btn">
                 </form>
+                <div class="exibir-resultado">
+                    <h2>Resultado:</h2>
+                    <p id="result"></p>
+                </div>
             </section>
         </main>
     </div>
+    <script src="src/scripts/script.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,38 @@
+/*Tablet*/
+@media screen and (max-width:768px) {
+    /*Contéudo do fundo branco*/
+    .container{
+        padding: 4rem; /*Espaçamento de 4x o tamanho da Raiz do Documento HTML em todos os lados*/
+    }
+}
+
+/*Celular*/
+@media screen and (max-width: 560px) {
+    /*Título*/
+    h1, h2{
+        font-size: 1.4rem; /*Tamanho da Fonte*/
+    }
+
+    /*Resultado*/
+    #result{
+        font-size: 1rem; /*Tamanho da Fonte*/
+    }
+
+    /*Outros Elementos e Botões*/
+    label,input ,p , .btn{
+        font-size: 0.8rem; /*Tamanho da Fonte*/
+    }
+}
+
+/*Botões*/
+.btn{
+    padding: 0.2rem;
+}
+
+/*Celular Menor*/
+@media screen and (max-width: 425px) {
+    /*Conteúdo com o Fundo Branco*/
+    .container{
+        padding: 2rem; /*Espaçamento de 2x em relação ao tamanho do Elemento HTML*/
+    }
+}
